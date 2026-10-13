@@ -1201,7 +1201,7 @@
       data.forEach((c, i) => {
         const x = pad + slot * i + slot / 2;
         const up = c.close >= c.open;
-        ctx.strokeStyle = ctx.fillStyle = up ? "#34d399" : "#f87171";
+        ctx.strokeStyle = ctx.fillStyle = up ? "#22c55e" : "#ef4444";
         ctx.beginPath(); ctx.moveTo(x, y(c.high)); ctx.lineTo(x, y(c.low)); ctx.stroke();
         const top = y(Math.max(c.open, c.close));
         const bot = y(Math.min(c.open, c.close));
